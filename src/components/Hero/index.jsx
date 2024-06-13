@@ -1,4 +1,5 @@
 import * as React from "react";
+<<<<<<< HEAD
 import { motion } from "framer-motion";
 import Testimonials from "../Testimonials";
 import { alpha } from "@mui/material";
@@ -32,12 +33,33 @@ export default function Hero() {
     visible: { opacity: 1, y: 0 },
   };
 
+=======
+import { alpha } from "@mui/material";
+import Box from "@mui/material/Box";
+import { motion } from "framer-motion";
+import Button from "@mui/material/Button";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import Container from "@mui/material/Container";
+import Link from "@docusaurus/Link";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import Testimonials from "../Testimonials";
+
+export default function Hero() {
+>>>>>>> a2b4e35 (feat: UI update)
   return (
     <Box
       id="hero"
       sx={(theme) => ({
         width: "100%",
+<<<<<<< HEAD
         backgroundImage: gradientBg(theme),
+=======
+        backgroundImage:
+          theme.palette.mode === "light"
+            ? "linear-gradient(180deg, #97f0af, #f9f9f9)"
+            : `linear-gradient(#02294F, ${alpha("#090E10", 0.0)})`,
+>>>>>>> a2b4e35 (feat: UI update)
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       })}
@@ -61,6 +83,7 @@ export default function Hero() {
               alignSelf: "center",
               textAlign: "center",
               fontSize: "clamp(3rem, 10vw, 2rem)",
+<<<<<<< HEAD
               color: "text.primary",
             }}
           >
@@ -72,6 +95,12 @@ export default function Hero() {
             >
               Geek Ink
             </motion.div>
+=======
+              color: "success.main",
+            }}
+          >
+            Geek Ink
+>>>>>>> a2b4e35 (feat: UI update)
           </Typography>
           <Typography
             component={motion.div}
@@ -86,6 +115,7 @@ export default function Hero() {
             northern Nigeria. We understand the unique challenges you face –
             limited access to quality education, a focus on theory over
             practical skills, and a lack of mentorship to navigate the industry.
+<<<<<<< HEAD
             <motion.div
               initial="hidden"
               animate="visible"
@@ -98,6 +128,8 @@ export default function Hero() {
               practical skills, and a lack of mentorship to navigate the
               industry.
             </motion.div>
+=======
+>>>>>>> a2b4e35 (feat: UI update)
           </Typography>
           <Stack
             direction={{ xs: "column", sm: "row" }}
@@ -106,6 +138,7 @@ export default function Hero() {
             useFlexGap
             sx={{ pt: 2, width: { xs: "100%", sm: "auto" } }}
           >
+<<<<<<< HEAD
             <motion.div
               initial="hidden"
               animate="visible"
@@ -122,6 +155,16 @@ export default function Hero() {
                 Explore Courses
               </Button>
             </motion.div>
+=======
+            <Button
+              variant="contained"
+              color="success"
+              component={Link}
+              to="/docs/intro"
+            >
+              Expore Courses
+            </Button>
+>>>>>>> a2b4e35 (feat: UI update)
           </Stack>
           <Typography
             component={motion.div}
@@ -138,6 +181,7 @@ export default function Hero() {
           >
             At Geek Ink, we believe in practical knowledge. Our courses are
             project-based: learn by building.
+<<<<<<< HEAD
             <motion.div
               initial="hidden"
               animate="visible"
@@ -147,6 +191,8 @@ export default function Hero() {
               At Geek Ink, we believe in practical knowledge. Our courses are
               project-based: learn by building.
             </motion.div>
+=======
+>>>>>>> a2b4e35 (feat: UI update)
           </Typography>
         </Stack>
         <Stack>
@@ -172,6 +218,7 @@ export default function Hero() {
                 spacing={2}
                 sx={{ alignSelf: "center", width: { xs: "100%", sm: "auto" } }}
               >
+<<<<<<< HEAD
                 <motion.div
                   initial="hidden"
                   animate="visible"
@@ -200,12 +247,37 @@ export default function Hero() {
                 >
                   <CheckCircleOutlineIcon color="success" fontSize="large" />
                 </motion.div>
+=======
+                <Typography
+                  component="span"
+                  variant="h1"
+                  sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
+                    alignSelf: "center",
+                    textAlign: "center",
+                    fontSize: "clamp(3rem, 10vw, 2rem)",
+                    color: "success.main",
+                  }}
+                >
+                  {text}
+                </Typography>
+                <CheckCircleOutlineIcon color="success" fontSize="large" />
+>>>>>>> a2b4e35 (feat: UI update)
               </Stack>
             ))}
           </Box>
           <Testimonials />
+<<<<<<< HEAD
+=======
+          {/*  */}
+>>>>>>> a2b4e35 (feat: UI update)
         </Stack>
       </Container>
     </Box>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a2b4e35 (feat: UI update)
