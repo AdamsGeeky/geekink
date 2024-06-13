@@ -74,10 +74,18 @@ export default function Hero() {
             </motion.div>
           </Typography>
           <Typography
+            component={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
             textAlign="center"
             color="text.secondary"
             sx={{ alignSelf: "center", width: { sm: "100%", md: "80%" } }}
           >
+            is here to bridge the gap for aspiring tech professionals in
+            northern Nigeria. We understand the unique challenges you face –
+            limited access to quality education, a focus on theory over
+            practical skills, and a lack of mentorship to navigate the industry.
             <motion.div
               initial="hidden"
               animate="visible"
@@ -116,6 +124,10 @@ export default function Hero() {
             </motion.div>
           </Stack>
           <Typography
+            component={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
             textAlign="center"
             color="text.secondary"
             sx={{
@@ -124,6 +136,8 @@ export default function Hero() {
               width: { sm: "100%", md: "80%" },
             }}
           >
+            At Geek Ink, we believe in practical knowledge. Our courses are
+            project-based: learn by building.
             <motion.div
               initial="hidden"
               animate="visible"
