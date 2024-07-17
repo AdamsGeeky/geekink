@@ -2,3 +2,4 @@
 /.npm-only-allow
 node_modules
 node_modules
+.next
